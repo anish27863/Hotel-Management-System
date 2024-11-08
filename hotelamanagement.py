@@ -7,12 +7,12 @@ import ttkbootstrap as tb
 
 
 #Substitute your credentials here
-username = "root"
-password = "password"
+username = "Anish"
+password = "12345"
 
 # MySQL connection code
 my_db = mysql.connector.connect(
-    host="localhost",
+    host="127.0.0.1",
     user=username,
     passwd=password,
     database="hms"
@@ -23,7 +23,7 @@ my_conn = my_db.cursor()
 window = tb.Window(themename="darkly")
 window.geometry("1366x768")
 window.title("Hotel Management")
-logo_path = "D:\Py\HMS\logo.ico"      #Give the absolute path of your logo.ico file here
+logo_path = "logo.jpg"      #Give the absolute path of your logo.ico file here
 window.iconbitmap(logo_path)
 window.style.configure('my.Treeview', rowheight=25)
 
